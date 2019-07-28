@@ -1,0 +1,11 @@
+class Solution {
+    public String removeVowels(String S) {
+        StringBuilder strb = new StringBuilder();
+        for (int i=0 ; i<S.length(); i++){
+            if(S.charAt(i)!='a' && S.charAt(i)!='e' && S.charAt(i)!='o' && S.charAt(i)!='u' && S.charAt(i)!='i'){
+                strb.append(S.charAt(i));
+            }
+        }
+        return 	strb.toString();
+    }
+}
